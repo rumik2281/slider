@@ -1,0 +1,80 @@
+.container {
+  width: 550px;
+  margin: 0 auto;
+  display: flex;
+}
+.navig-left, .navig-right {
+  color: #000;
+  font-weight: bold;
+  font-size: 50px;
+  background: #727272;
+  cursor: pointer;
+  z-index: 999;
+  user-select: none;
+  transition: all 0.3s ease 0s;
+  height: 60px;
+  margin: auto 10px auto 10px;
+}
+.navig-left:hover, .navig-right:hover {
+  background: #ececec;
+}
+.navig-left {
+  top: 50%;
+  left: 10px;
+ 
+}
+
+.navig-right {
+  top: 50%;
+  right: 10px;
+}
+
+.container-list {
+  display: flex;
+  transition: all 0.7s ease 0s;
+}
+.item {
+  width: 500px;
+  flex: 1 0 100%;
+  height: 300px;
+}
+.item img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.autoplay {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.autoplay button {
+  cursor: pointer;
+}
+.pagination {
+  display:flex;
+  margin-top: 10px;
+  justify-content: center;
+  z-index: 999;
+}
+.pagination div {
+  background: #e7e7e7;
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+.pagination div.active {
+  background: green;
+}
+
+.pagination div:hover {
+  background: #727272;
+}
+
+.slide-container {
+  overflow: hidden;
+}
